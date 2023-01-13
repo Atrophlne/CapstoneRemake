@@ -165,6 +165,7 @@ public class MainCapstone {
       } else if (userInput.equalsIgnoreCase("TnC")) {
          System.out.print(
                "By making this booking you are agreeing in full to the following Terms & Conditions. \nYour reservation cannot be canceled once the application has been submitted, \nalthough it may eventually be rescheduled.");
+         new MainCapstone();
       } else {
          System.out.print("Cannot find this in the Choices\n");
          new MainCapstone();
