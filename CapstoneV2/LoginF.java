@@ -9,10 +9,11 @@ class LoginF {
    String NonConfirmed = "Schedules.txt";
 
    void Login() throws rException {
+      ArrayList<String> Patient = new ArrayList<>();
       try {
          System.out.print("Enter Username: ");
          String username = Scan.nextLine();
-         System.out.print("Enter Username: ");
+         System.out.print("Enter Password: ");
          String password = Scan.nextLine();
 
          String NSysReader2 = null;
@@ -31,52 +32,47 @@ class LoginF {
 
             if (_UserName.equals(username) && _PassWord.equals(password)) {
                found_Copy2 = true;
-               System.out.print("Login Success!\n\n");
+               System.out.print("\nLogin Success!\n\n");
                System.out.print("[NOTE] If nothing show's Means your Reservation is still not Accepted\n\n");
-               found_Copy2 = true;
             }
          }
 
          switch (found_Copy2 + "-g") {
             case "true-g":
-               String SysReader = null;
-               Path Path_C = Paths.get(Confirmed.toString());
-               InputStream SySinpt = Files.newInputStream(Path_C);
-               BufferedReader B_Reader = new BufferedReader(new InputStreamReader(SySinpt));
+               Scanner LookFor = new Scanner(new File(Confirmed));
+               LookFor.useDelimiter("\r?\r");
 
-               while ((SysReader = B_Reader.readLine()) != null) {
-                  String LastName, FirstName, Email, Contact, Doctor, Specialization, Date, Time;
+               while (LookFor.hasNext()) {
+                  Patient.add(LookFor.next());
+               }
+               for (String Containters : Patient) {
+                  if (Containters.contains(username)) {
+                     String LastName, FirstName, Email, Contact, Doctor, Specialization, Date, Time;
+                     String Finding[] = Containters.split(",");
 
-                  String LastNT[] = SysReader.split(",");
-                  String FirstNT[] = SysReader.split(",");
-                  String EmailNT[] = SysReader.split(",");
-                  String ContactNT[] = SysReader.split(",");
-                  String DoctorNT[] = SysReader.split(",");
-                  String SpeciNT[] = SysReader.split(",");
-                  String DateNT[] = SysReader.split(",");
-                  String TimeNT[] = SysReader.split(",");
+                     LastName = Finding[0];
+                     FirstName = Finding[1];
+                     Email = Finding[2];
+                     Contact = Finding[3];
+                     Doctor = Finding[5];
+                     Specialization = Finding[6];
+                     Date = Finding[7];
+                     Time = Finding[8];
 
-                  LastName = LastNT[0];
-                  FirstName = FirstNT[1];
-                  Email = EmailNT[2];
-                  Contact = ContactNT[3];
-                  Doctor = DoctorNT[5];
-                  Specialization = SpeciNT[6];
-                  Date = DateNT[7];
-                  Time = TimeNT[8];
-
-                  System.out.print("Last Name:       " + LastName.toUpperCase() + "\n");
-                  System.out.print("First Name:      " + FirstName.toUpperCase() + "\n");
-                  System.out.print("Email Address:   " + Email + "\n");
-                  System.out.print("Contact Nymber:  " + Contact + "\n");
-                  System.out.print("Doctor:          " + Doctor.toUpperCase() + "\n");
-                  System.out.print("Specialization:  " + Specialization.toUpperCase() + "\n");
-                  System.out.print("Date:            " + Date + "\n");
-                  System.out.print("Time:            " + Time + "\n\n");
-                  new MainCapstone();
+                     System.out.print("Last Name:       " + LastName.toUpperCase() + "\n");
+                     System.out.print("First Name:      " + FirstName.toUpperCase() + "\n");
+                     System.out.print("Email Address:   " + Email + "\n");
+                     System.out.print("Contact Nymber:  " + Contact + "\n");
+                     System.out.print("Doctor:          " + Doctor.toUpperCase() + "\n");
+                     System.out.print("Specialization:  " + Specialization.toUpperCase() + "\n");
+                     System.out.print("Date:            " + Date + "\n");
+                     System.out.print("Time:            " + Time + "\n\n");
+                     new MainCapstone();
+                  }
                }
                break;
             default:
+               new MainCapstone();
          }
          System.out.print("Cannot find Username\n\n");
          new MainCapstone();

@@ -6,10 +6,14 @@ import static java.nio.file.StandardOpenOption.*;
 public class MainCapstone {
    public MainCapstone() throws IOException, rException {
       Scanner Scan = new Scanner(System.in);
-      System.out.print(">> [Login] to see your full details.\n");
-      System.out.print(">> [Create] to see your create a new appointment.\n");
       System.out.print(">> [List] to see The List of the Doctors, Specialization.\n");
-      System.out.print(">> [Doc] to log as a Doctor.\n>> ");
+      System.out.print(">> [Create] to see your create a new appointment.\n");
+      System.out.print(">> [TnC] to see the Terms and Condition\n");
+      System.out.print(">> [Login] to see your full details.\n");
+      System.out.print(">> [Doc] to log as a Doctor.\n");
+      System.out.print("------------------------------------------------------------------------\n");
+      System.out.print("Please See Terms and condition [TnC]");
+      System.out.print("We Recommend checking The [List] first before Creating a [Reservation]: \n> ");
       String userInput = Scan.nextLine();
 
       if (userInput.equalsIgnoreCase("Login")) {
@@ -23,141 +27,144 @@ public class MainCapstone {
          System.out.print("List of the Doctors and their Specification\n\n");
 
          System.out.print("Specialization: Neurologist \n");
-         System.out.print("Doctor Name: " + "Dr. Stephen Cromwell "
+         System.out.print("Doctor Name: " + "Dr. Stephen Cromwell          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + "\t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Jeffrey Monrow "
+         System.out.print("Doctor Name: " + "Dr. Jeffrey Monrow          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Charles West "
+         System.out.print("Doctor Name: " + "Dr. Charles West          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Paul Adler "
+         System.out.print("Doctor Name: " + "Dr. Paul Adler          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Elisabeth Ford "
+         System.out.print("Doctor Name: " + "Dr. Elisabeth Ford          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Cardiologist \n");
-         System.out.print("Doctor Name: " + "Dr. Thomas Dawson "
+         System.out.print("Doctor Name: " + "Dr. Thomas Dawson          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Joseph Grey "
+         System.out.print("Doctor Name: " + "Dr. Joseph Grey          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Richard Anderson "
+         System.out.print("Doctor Name: " + "Dr. Richard Anderson          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Wiilliam Carter "
+         System.out.print("Doctor Name: " + "Dr. Wiilliam Carter          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Robert Lenon "
+         System.out.print("Doctor Name: " + "Dr. Robert Lenon          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Pulmonologist  \n");
-         System.out.print("Doctor Name: " + "Dr. John Astor "
+         System.out.print("Doctor Name: " + "Dr. John Astor          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Michael Clifford "
+         System.out.print("Doctor Name: " + "Dr. Michael Clifford          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. David Forbes "
+         System.out.print("Doctor Name: " + "Dr. David Forbes          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Jenifer Hoffman "
+         System.out.print("Doctor Name: " + "Dr. Jenifer Hoffman          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Mark Johnson "
+         System.out.print("Doctor Name: " + "Dr. Mark Johnson          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Gynecologist \n");
-         System.out.print("Doctor Name: " + "Dr. Paula Lauren "
+         System.out.print("Doctor Name: " + "Dr. Paula Lauren          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Kristine Lopez "
+         System.out.print("Doctor Name: " + "Dr. Kristine Lopez          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Rosie Morgan "
+         System.out.print("Doctor Name: " + "Dr. Rosie Morgan          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Samantha Ortega "
+         System.out.print("Doctor Name: " + "Dr. Samantha Ortega          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Suzanne Smith "
+         System.out.print("Doctor Name: " + "Dr. Suzanne Smith          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Gastroentorologist \n");
-         System.out.print("Doctor Name: " + "Dr. George Presley "
+         System.out.print("Doctor Name: " + "Dr. George Presley          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Eugene Raynolds "
+         System.out.print("Doctor Name: " + "Dr. Eugene Raynolds          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Alan Thomson "
+         System.out.print("Doctor Name: " + "Dr. Alan Thomson          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Christhoper Welch "
+         System.out.print("Doctor Name: " + "Dr. Christhoper Welch          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Klaine Ferrer "
+         System.out.print("Doctor Name: " + "Dr. Klaine Ferrer          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Optalmologist \n");
-         System.out.print("Doctor Name: " + "Dr. Claire Velasco "
+         System.out.print("Doctor Name: " + "Dr. Claire Velasco          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Taylor Fuentez "
+         System.out.print("Doctor Name: " + "Dr. Taylor Fuentez          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Kim Caniete "
+         System.out.print("Doctor Name: " + "Dr. Kim Caniete          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Cythia Samson "
+         System.out.print("Doctor Name: " + "Dr. Cythia Samson          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Jonathan Fajardo "
+         System.out.print("Doctor Name: " + "Dr. Jonathan Fajardo          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Otolaryngologist \n");
-         System.out.print("Doctor Name: " + "Dr. Ralph Mallari "
+         System.out.print("Doctor Name: " + "Dr. Ralph Mallari          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Matthew Gregorio "
+         System.out.print("Doctor Name: " + "Dr. Matthew Gregorio          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Steven Chua "
+         System.out.print("Doctor Name: " + "Dr. Steven Chua          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Cristina Sevilia "
+         System.out.print("Doctor Name: " + "Dr. Cristina Sevilia          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Emily Ybaniez "
+         System.out.print("Doctor Name: " + "Dr. Emily Ybaniez          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Orthopedic \n");
-         System.out.print("Doctor Name: " + "Dr. Vincent Ventura "
+         System.out.print("Doctor Name: " + "Dr. Vincent Ventura          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Kenneth Herrera "
+         System.out.print("Doctor Name: " + "Dr. Kenneth Herrera          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Nathan Baltazar "
+         System.out.print("Doctor Name: " + "Dr. Nathan Baltazar          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Daniel Cervantes "
+         System.out.print("Doctor Name: " + "Dr. Daniel Cervantes          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Dianne Arevalo "
+         System.out.print("Doctor Name: " + "Dr. Dianne Arevalo          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Urologists \n");
-         System.out.print("Doctor Name: " + "Dr. Andrew Ronquillo "
+         System.out.print("Doctor Name: " + "Dr. Andrew Ronquillo          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Manuel Mendenz "
+         System.out.print("Doctor Name: " + "Dr. Manuel Mendenz          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Ronald Gomez "
+         System.out.print("Doctor Name: " + "Dr. Ronald Gomez          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Roan Velasquez "
+         System.out.print("Doctor Name: " + "Dr. Roan Velasquez          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Scott Williams "
+         System.out.print("Doctor Name: " + "Dr. Scott Williams          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Hematologist \n");
-         System.out.print("Doctor Name: " + "Dr. Timothy Evangelista "
+         System.out.print("Doctor Name: " + "Dr. Timothy Evangelista          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Tristan Mariano "
+         System.out.print("Doctor Name: " + "Dr. Tristan Mariano          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Harold De Vera "
+         System.out.print("Doctor Name: " + "Dr. Harold De Vera          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Caroline Velncia "
+         System.out.print("Doctor Name: " + "Dr. Caroline Velncia          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Claudia Cabrera "
+         System.out.print("Doctor Name: " + "Dr. Claudia Cabrera          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n\n");
 
          System.out.print("Specialization: Pediatrician \n");
-         System.out.print("Doctor Name: " + "Dr. Catherine Espinosa "
+         System.out.print("Doctor Name: " + "Dr. Catherine Espinosa          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Miranda Serrano "
+         System.out.print("Doctor Name: " + "Dr. Miranda Serrano          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Sebastian Medina "
+         System.out.print("Doctor Name: " + "Dr. Sebastian Medina          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + "  \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Juliette Acosta "
+         System.out.print("Doctor Name: " + "Dr. Juliette Acosta          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + " \t\t\n");
-         System.out.print("Doctor Name: " + "Dr. Kelly Bernardo "
+         System.out.print("Doctor Name: " + "Dr. Kelly Bernardo          "
                + "Available Time: [<Time1>, <Time2>, <Time3>, <Time4>, <Time5>] " + "\t\t\n\n");
          new MainCapstone();
 
       } else if (userInput.equalsIgnoreCase("Doc")) {
          Doc Dc = new Doc();
          Dc.Login();
+      } else if (userInput.equalsIgnoreCase("TnC")) {
+         System.out.print(
+               "By making this booking you are agreeing in full to the following Terms & Conditions. \nYour reservation cannot be canceled once the application has been submitted, \nalthough it may eventually be rescheduled.");
       } else {
          System.out.print("Cannot find this in the Choices\n");
          new MainCapstone();

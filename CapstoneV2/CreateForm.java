@@ -206,7 +206,7 @@ class CreateForm extends CreateEncapsulation {
 
     void Neurologist() {
         try {
-            System.out.print("Only put the Dr's Name");
+            System.out.print("Only put the Dr's Name\n");
             System.out.print("You may type [Back] if you've chosen the wrong Specialization\n");
             System.out.print("Now Select a Doctor in Neurologist: \n> Dr. ");
             String Doctor = Scan.nextLine();
